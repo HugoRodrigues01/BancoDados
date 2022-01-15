@@ -39,6 +39,11 @@ class MainWindow(QtWidgets.QMainWindow):
         """
         This function will be create end load all configurations of window.
         """
+
+        # Add status bar in window
+        self.status_bar: QtWidgets.QStatusBar = QtWidgets.QStatusBar()
+        self.setStatusBar(self.status_bar)
+
         self.setWindowTitle(NAME_WINDOW)
         self.setMinimumSize(WIDTH, HEAIGHT)
         self.show()
