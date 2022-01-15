@@ -61,6 +61,29 @@ class MainWindow(QtWidgets.QMainWindow):
         self.label.setFont(self.font)
         #---------------------------------------------------
 
+        # Button Open Config
+        #---------------------------------------------------
+        self.button_config: QtWidgets.QPushButton = QtWidgets.QPushButton("Open Config")
+        self.button_config.pressed.connect(lambda: print())
+        #---------------------------------------------------
+
+        # Button Open Database
+        #---------------------------------------------------
+        self.button_open_database: QtWidgets.QPushButton = QtWidgets.QPushButton("Open DataBase")
+        self.button_open_database.pressed.connect(lambda: print())
+        #---------------------------------------------------
+
+        # Layout of buttons
+        #---------------------------------------------------
+        self.button_layout: QtWidgets.QHBoxLayout = QtWidgets.QHBoxLayout()
+        #---------------------------------------------------
+
+        # Adding the widgets into the buttons layout
+        #===================================================
+        self.button_layout.addWidget(self.button_config)
+        self.button_layout.addWidget(self.button_open_database)
+        #===================================================
+
         # Adding the widgets into the main layout 
         #===================================================
         self.main_layout.addWidget(self.label)
