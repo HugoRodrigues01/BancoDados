@@ -90,7 +90,16 @@ class MainWindow(QtWidgets.QMainWindow):
         self.main_layout.addLayout(self.button_layout)
         #===================================================
 
-    def ceate_menu(self) -> None: pass
+    def create_menu(self) -> None:
+
+        self.menu: QtWidgets.QMenuBar = self.menuBar()
+
+        # Tools Menu
+        #---------------------------------------------------
+        self.menu.addMenu("&Tools")
+        #---------------------------------------------------
+    
+    def create_actions(self) -> None: pass
 
 if __name__ == "__main__":
 
