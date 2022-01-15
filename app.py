@@ -1,3 +1,5 @@
+#!venv/bin/python3.10
+
 from PyQt6 import QtWidgets, QtGui, QtCore
 import sys
 
