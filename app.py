@@ -12,6 +12,9 @@ class MainWindow(QtWidgets.QMainWindow):
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
 
+        # Load menu
+        self.create_menu()
+
         # Main Layout
         #---------------------------------------------------
         self.main_layout: QtWidgets.QVBoxLayout = QtWidgets.QVBoxLayout()
