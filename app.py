@@ -87,6 +87,7 @@ class MainWindow(QtWidgets.QMainWindow):
         # Adding the widgets into the main layout 
         #===================================================
         self.main_layout.addWidget(self.label)
+        self.main_layout.addLayout(self.button_layout)
         #===================================================
 
     def ceate_menu(self) -> None: pass
