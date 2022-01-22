@@ -7,6 +7,7 @@ from windows.config_window import ConfigWindow
 NAME_WINDOW: str = "DataBase"
 WIDTH: int = 600
 HEAIGHT: int = 350
+PATH_STYLE: str = "style/style.qss"
 
 class MainWindow(QtWidgets.QMainWindow):
 
