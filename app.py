@@ -74,7 +74,7 @@ class MainWindow(QtWidgets.QMainWindow):
         # Button Open Config
         #---------------------------------------------------
         self.button_config: QtWidgets.QPushButton = QtWidgets.QPushButton("Open Config")
-        self.button_config.pressed.connect(lambda: print())
+        self.button_config.pressed.connect(self.open_config_window)
         #---------------------------------------------------
 
         # Button Open Database
