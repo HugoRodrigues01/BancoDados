@@ -34,6 +34,11 @@ class MainWindow(QtWidgets.QMainWindow):
         self.container.setLayout(self.main_layout)
         #---------------------------------------------------
 
+        # Loading the windows
+        #---------------------------------------------------
+        self.config_window: ConfigWindow = ConfigWindow(self)
+        #---------------------------------------------------
+
         # The main widget of window
         self.setCentralWidget(self.container)
 
