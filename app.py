@@ -63,7 +63,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.font: QtGui.QFont = QtGui.QFont()
         self.font.setFamily("monospace")
         self.font.setPointSize(30)
-        name_label: str = "Data de <span style='font-weight: bold'>Base</span>"
+        name_label: str = "Data<span style='font-weight: bold'>Base</span>"
         # Label 
         #---------------------------------------------------
         self.label: QtWidgets.QLabel = QtWidgets.QLabel(name_label)
