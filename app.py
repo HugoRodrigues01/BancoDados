@@ -111,6 +111,17 @@ class MainWindow(QtWidgets.QMainWindow):
     
     def create_actions(self) -> None: pass
 
+    def load_style(self) -> None:
+
+        with open(PATH_STYLE, "r", encoding="UTF-8") as file_style:
+
+            # open style sile and read in window
+            self.setStyleSheet(file_style.read())
+    
+    def open_config_window(self) -> None:
+
+        self.config_window.cretae_window()
+
 if __name__ == "__main__":
 
     app: QtWidgets.QApplication = QtWidgets.QApplication(sys.argv)
