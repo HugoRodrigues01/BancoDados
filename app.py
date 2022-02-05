@@ -2,7 +2,7 @@
 
 from PyQt6 import QtWidgets, QtGui, QtCore
 import sys
-from windows.config_window import ConfigWindow
+from windows.database_config_window import DataBaseConfigWindow
 
 NAME_WINDOW: str = "DataBase"
 WIDTH: int = 600
