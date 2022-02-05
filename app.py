@@ -36,7 +36,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
         # Loading the windows
         #---------------------------------------------------
-        self.config_window: ConfigWindow = ConfigWindow(self)
+        self.config_window: DataBaseConfigWindow = DataBaseConfigWindow(self)
         #---------------------------------------------------
 
         # The main widget of window
