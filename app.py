@@ -120,7 +120,7 @@ class MainWindow(QtWidgets.QMainWindow):
     
     def open_config_window(self) -> None:
 
-        self.config_window.cretae_window()
+        self.config_window.create_window()
 
 if __name__ == "__main__":
 
