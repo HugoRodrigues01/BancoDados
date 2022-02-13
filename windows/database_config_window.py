@@ -53,6 +53,14 @@ class DataBaseConfigWindow(QtWidgets.QMainWindow):
 
     def open_show_configs(self) -> None:
 
+        json: dict = ConfigJSON.read_json_config()
+
+        #---------------------------------------------------
+        self.window_ui.label_info_database_name.setText(json["DataBaseName"])
+        self.window_ui.label_info_host.setText(json["Host"])
+        self.window_ui.label_info_password.setText(json["Password"])
+        self.window_ui.label_info_user.setText(json["User"])
+        #---------------------------------------------------
         self.window_ui.frame_setting_database.hide()
         self.window_ui.frame_show_configs.show()
     
