@@ -1,7 +1,5 @@
-from socketserver import ThreadingUDPServer
-from PyQt6 import QtWidgets, QtCore, QtGui, uic
-from windows_ui.database_config_window import Ui_DataBaseConfigWindow
-
+from modules import QtWidgets, QtGui, QtCore, Ui_DataBaseConfigWindow
+from classes.connect_config_json_file import ConfigJSON
 
 class DataBaseConfigWindow(QtWidgets.QMainWindow):
 
