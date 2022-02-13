@@ -83,7 +83,7 @@ class MainWindow(QtWidgets.QMainWindow):
         # Button Open Database
         #---------------------------------------------------
         self.button_open_database: QtWidgets.QPushButton = QtWidgets.QPushButton("Open DataBase")
-        self.button_open_database.pressed.connect(lambda: print())
+        self.button_open_database.pressed.connect(self.open_database_window)
         #---------------------------------------------------
 
         # Layout of buttons
