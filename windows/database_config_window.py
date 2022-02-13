@@ -16,6 +16,8 @@ class DataBaseConfigWindow(QtWidgets.QMainWindow):
         self.loading_depedences()
         #---------------------------------------------------
 
+        self.window_ui.push_button_connect.pressed.connect(self.connect_in_database)
+
     def create_window(self) -> None:
         
         self.window_ui.frame_show_configs.hide()
