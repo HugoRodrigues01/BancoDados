@@ -125,6 +125,11 @@ class MainWindow(QtWidgets.QMainWindow):
 
         self.config_window.create_window()
 
+    def open_database_window(self) -> None:
+
+        self.database_window.create_window()
+
+
 if __name__ == "__main__":
 
     app: QtWidgets.QApplication = QtWidgets.QApplication(sys.argv)
