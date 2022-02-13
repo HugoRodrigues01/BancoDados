@@ -2,7 +2,7 @@
 
 from modules import QtWidgets, QtCore, QtGui
 import sys
-from windows.database_config_window import DataBaseConfigWindow
+from windows import DataBaseConfigWindow, DataBaseWindow
 
 NAME_WINDOW: str = "DataBase"
 WIDTH: int = 600
