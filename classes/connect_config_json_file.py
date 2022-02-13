@@ -5,7 +5,7 @@ CONFIG_DEFAULT: dict = {
     "Host": "localhost",
     "User": "root",
     "Password": "",
-    "DataBaseName": "Animes_DB"
+    "DataBaseName": ""
 }
 
 class ConfigJson:
