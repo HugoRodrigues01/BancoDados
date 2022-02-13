@@ -2,7 +2,6 @@ from jsonpickle import encode, decode
 
 JSON_CONFIG_FILE: str = "configs/database_config.json"
 CONFIG_DEFAULT: dict = {
-    "Name": "",
     "Host": "localhost",
     "User": "root",
     "Password": "",
