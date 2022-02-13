@@ -1,7 +1,1 @@
-{
-    "Name": "",
-    "Host": "localhost",
-    "User": "root",
-    "Password": "",
-    "DataBaseName": "Animes_DB"
-}
+{"Host": "localhost", "User": "root", "Password": "", "DataBaseName": ""}
