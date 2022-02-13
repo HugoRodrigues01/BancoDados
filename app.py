@@ -1,6 +1,6 @@
 #!venv/bin/python3.10
 
-from PyQt6 import QtWidgets, QtGui, QtCore
+from modules import QtWidgets, QtCore, QtGui
 import sys
 from windows.database_config_window import DataBaseConfigWindow
 
