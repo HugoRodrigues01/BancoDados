@@ -8,7 +8,7 @@ CONFIG_DEFAULT: dict = {
     "DataBaseName": ""
 }
 
-class ConfigJson:
+class ConfigJSON:
 
     @staticmethod
     def read_json_config() -> dict:
