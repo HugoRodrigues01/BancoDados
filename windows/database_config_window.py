@@ -69,3 +69,16 @@ class DataBaseConfigWindow(QtWidgets.QMainWindow):
         self.window_ui.frame_show_configs.hide()
         self.window_ui.frame_setting_database.show()
 
+    def connect_in_database(self) -> None:
+
+        if self.window_ui.radio_button_save.isChecked:
+
+            config: dict = ConfigJSON.read_json_config()
+
+            # Change the configs of database
+            config["DataBaseName"] =  self.window_ui.line_edit_database_name.text()
+            config["Host"] = self.window_ui.line_edit_host.text()
+            config["User"] = self.window_ui.line_edit_user.text()
+            config["Password"] = self.window_ui.line_edit_password.text()
+
+            ConfigJSON.update_json_config(config)
