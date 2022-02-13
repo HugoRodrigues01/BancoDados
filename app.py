@@ -37,6 +37,9 @@ class MainWindow(QtWidgets.QMainWindow):
         # Loading the windows
         #---------------------------------------------------
         self.config_window: DataBaseConfigWindow = DataBaseConfigWindow(self)
+
+        self.database_window: DataBaseWindow = DataBaseWindow(self)
+        self.setDisabled
         #---------------------------------------------------
 
         # The main widget of window
